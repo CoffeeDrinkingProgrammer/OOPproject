@@ -9,25 +9,12 @@ package finalproject;
  *
  * @author user
  */
-public class Piece {
+public abstract class Piece {
     private boolean pieceState;
     private boolean isWhite;
 
-    public boolean isPieceState() {
-        return pieceState;
-    }
 
-    public void setPieceState(boolean pieceState) {
-        this.pieceState = pieceState;
-    }
+    public canMove(Board board, Spot initialSpot, Spot finalSpot){
 
-    public boolean isWhite() {
-        return isWhite;
     }
-
-    public void setWhite(boolean white) {
-        isWhite = white;
-    }
-
-    public canMove(Board board, )
 }
