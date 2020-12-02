@@ -9,6 +9,6 @@ package finalproject;
  *
  * @author user
  */
-public class Move {
+public class Move{
     
 }

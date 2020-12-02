@@ -19,7 +19,24 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="098bd220-7378-4110-a867-4cdeb83afc37" name="Default Changelist" comment="" />
+    <list default="true" id="098bd220-7378-4110-a867-4cdeb83afc37" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/finalproject/GameDetails/Board.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/finalproject/GameDetails/Game.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/finalproject/GameDetails/GameHistory.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/finalproject/GameDetails/Move.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/finalproject/GameDetails/Spot.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/finalproject/Pieces/Bishop.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/finalproject/Pieces/King.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/finalproject/Pieces/Knight.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/finalproject/Pieces/Pawn.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/finalproject/Pieces/Piece.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/finalproject/Pieces/Queen.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/finalproject/Pieces/Rook.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/finalproject/Players/ComputerPlayer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/finalproject/Players/HumanPlayer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/finalproject/Players/Player.java" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -48,13 +65,15 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
   <component name="RunManager">
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
           <option name="containerStateName" value="" />
         </value>
       </option>
-      <option name="TEST_OBJECT" value="class" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -69,6 +88,7 @@
       <option name="presentableId" value="Default" />
       <updated>1606891901635</updated>
       <workItem from="1606891902869" duration="199000" />
+      <workItem from="1606892508147" duration="943000" />
     </task>
     <servers />
   </component>
@@ -85,6 +105,7 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
     <state x="623" y="225" key="search.everywhere.popup" timestamp="1606892095200">
