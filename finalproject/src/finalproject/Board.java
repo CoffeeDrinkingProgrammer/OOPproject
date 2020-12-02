@@ -10,5 +10,33 @@ package finalproject;
  * @author user
  */
 public class Board {
+    private Spot[][] boxes;
     
+    //constructors
+    public Board(){
+        
+    }
+    
+    //setters and getters
+    public Spot[][] getBoxes(){
+        return boxes;
+    }
+    
+    public void setBoxes(Spot[][] boxes){
+        this.boxes = boxes.clone();
+    }
+    
+    
+    //methods
+    public void Board(){
+        
+    }
+    
+    public Spot getBox(int x, int y){ //DOES THIS NEED ANOTHER PARAMERTER "PIECE" TO COMPLETE SPOT???
+        
+    }
+    
+    public void resetBoard(){
+        
+    }
 }
