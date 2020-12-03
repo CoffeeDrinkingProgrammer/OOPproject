@@ -14,7 +14,9 @@ public abstract class Piece {
     private boolean isWhite;
 
 
-    public canMove(Board board, Spot initialSpot, Spot finalSpot){
-
+    public boolean canMove(Board board, Spot initialSpot, Spot finalSpot){
+        boolean ret = false;
+        
+        return ret;
     }
 }
