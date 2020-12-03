@@ -9,6 +9,12 @@ package finalproject;
  *
  * @author user
  */
-public class Rook {
+public class Rook extends Piece{
     
+    @Override
+    public boolean canMove (Board board, Spot initialSpot, Spot finalSpot){
+        boolean ret = false;
+        
+        return ret;
+    }
 }

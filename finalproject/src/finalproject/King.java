@@ -9,6 +9,37 @@ package finalproject;
  *
  * @author user
  */
-public class King {
+public class King extends Piece{
+    private boolean isCastlingDone;
     
+    public boolean isCastlingDone (){
+        boolean ret = false;
+        
+        return ret;
+    }
+
+    public boolean isValidCastling (Board board, Spot a, Spot b){
+        boolean ret = false;
+        
+        return ret;
+    }
+    
+    public boolean isCastlingMove(Spot a, Spot b){
+        boolean ret = false;
+        
+        return ret;
+    }
+    
+    public boolean movePiece(){
+        boolean ret = false;
+        
+        return ret;
+    }
+    
+    @Override
+    public boolean canMove (Board board, Spot initialSpot, Spot finalSpot){
+        boolean ret = false;
+        
+        return ret;
+    }
 }

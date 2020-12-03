@@ -9,6 +9,12 @@ package finalproject;
  *
  * @author user
  */
-public class Bishop {
+public class Bishop extends Piece{
     
+    @Override
+    public boolean canMove (Board board, Spot initialSpot, Spot finalSpot){
+        boolean ret = false;
+        
+        return ret;
+    }
 }
