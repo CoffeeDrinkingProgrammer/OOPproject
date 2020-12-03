@@ -33,7 +33,8 @@ public class Board {
     }
     
     public Spot getBox(int x, int y){ //DOES THIS NEED ANOTHER PARAMERTER "PIECE" TO COMPLETE SPOT???
-        
+        Spot ret = new Spot(x, y);
+        return ret;
     }
     
     public void resetBoard(){
