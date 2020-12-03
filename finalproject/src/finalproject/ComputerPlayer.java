@@ -9,6 +9,9 @@ package finalproject;
  *
  * @author user
  */
-public class ComputerPlayer {
+public class ComputerPlayer extends Player{
     
+    public void ComputerPlayer(boolean b){
+        
+    }
 }
