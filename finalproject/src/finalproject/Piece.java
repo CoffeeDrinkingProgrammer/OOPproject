@@ -12,6 +12,10 @@ package finalproject;
 public abstract class Piece {
     private boolean pieceState;
     private boolean isWhite;
+    
+    public Piece(){
+        
+    }
 
 
     public boolean canMove(Board board, Spot initialSpot, Spot finalSpot){
