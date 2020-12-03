@@ -10,5 +10,15 @@ package finalproject;
  * @author user
  */
 public class Move{
+    private Player player;
+    private Spot spotStart;
+    private Spot spotMove;
+    private Piece pieceMoved;
+    private Piece pieceKilled;
+    
+    //constructors
+    public Move(){
+        
+    }
     
 }

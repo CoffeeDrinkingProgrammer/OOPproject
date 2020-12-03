@@ -9,6 +9,11 @@ package finalproject;
  *
  * @author user
  */
-public class HumanPlayer {
+public class HumanPlayer extends Player{
+    private String playerName;
+    
+    public void HumanPlayer(boolean b){
+        
+    }
     
 }

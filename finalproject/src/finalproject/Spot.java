@@ -47,6 +47,11 @@ public class Spot {
         this.y = y;
         this.piece = piece;
     }
+    
+    public Spot(int x, int y) {
+        this.x = x;
+        this.y = y;
+    }
     //    --------------------------------------------------------   //
 
 
