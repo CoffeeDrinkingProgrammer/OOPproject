@@ -42,9 +42,9 @@ public class Game {
         return players;
     }
     
-    public void setplayers(Player[] players){
+    public void setPlayers(Player[] players){
         int x;
-        for (x=0; players[x]!=NULL; x++){
+        for (x=0; x < players.length ; x++){
             this.players[x] = players[x];
         }
     }
