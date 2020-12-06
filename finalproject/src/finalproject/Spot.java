@@ -55,5 +55,9 @@ public class Spot {
     //    --------------------------------------------------------   //
 
 
+    //    -------------------- Methods -------------------- //
+    public boolean isOccupied(){
+        return this.piece != null;
+    }
 
 }
