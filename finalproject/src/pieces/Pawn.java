@@ -1,4 +1,13 @@
+<<<<<<< Updated upstream:finalproject/src/finalproject/Pawn.java
 package chessgui.pieces;
+=======
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package pieces;
+>>>>>>> Stashed changes:finalproject/src/pieces/Pawn.java
 
 import chessgui.Board;
 

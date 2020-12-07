@@ -3,13 +3,14 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package finalproject;
+package pieces;
 
 /**
  *
  * @author user
  */
 public class Bishop extends Piece{
+<<<<<<< Updated upstream:finalproject/src/finalproject/Bishop.java
     
     @Override
     public boolean canMove (Board board, Spot initialSpot, Spot finalSpot){
@@ -65,4 +66,7 @@ public class Bishop extends Piece{
         }
         return true;
     }
+=======
+
+>>>>>>> Stashed changes:finalproject/src/pieces/Bishop.java
 }
