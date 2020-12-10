@@ -5,6 +5,9 @@
  */
 package pieces;
 
+import chess.*;
+
+
 /**
  *
  * @author user
@@ -12,25 +15,27 @@ package pieces;
 public class Knight extends Piece{
     
     @Override
-    public boolean canMove(int destination_x, int destination_y)
-    {
+    public boolean canMove(Board board, Spot initialSpot, Spot finalSpot){
 
         //checks if a same-color piece is on the destination
-        Piece testPiece = board.getPiece(destination_x, destination_y);
+        Piece testPiece= finalSpot.getPiece();
+
         if(testPiece!=null){
-            if(testPiece.isWhite()&&this.isWhite()){
+            if(testPiece.isWhite() && this.isWhite()){
                 return false;
-            }else if(testPiece.isBlack()&&this.isBlack()){
+            }else if(!testPiece.isWhite() && !this.isWhite()){
                 return false;
             }
         }
+
         //checks if the piece is moving properly
-        if(Math.abs(destination_x-this.getX())==1){
-            if(Math.abs(destination_y-this.getY())!=2){
+
+        if(Math.abs(finalSpot.getX() - initialSpot.getX()) == 1){
+            if(Math.abs(finalSpot.getY() - initialSpot.getY()) != 2){
                 return false;
             }
-        }else if(Math.abs(destination_y-this.getY())==1){
-            if(Math.abs(destination_x-this.getX())!=2){
+        }else if(Math.abs(finalSpot.getX() - initialSpot.getX()) == 2){
+            if(Math.abs(finalSpot.getY() - initialSpot.getY()) != 1){
                 return false;
             }
         }
