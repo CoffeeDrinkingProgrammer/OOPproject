@@ -3,8 +3,9 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package pieces;
 
+package pieces;
+import java.util.*;
 import chess.Board;
 import chess.Spot;
 
@@ -51,5 +52,8 @@ public abstract class Piece {
 
     /* methods */
 
-    public abstract boolean canMove(Board board, Spot start, Spot end);
+    public ArrayList<Spot> canMove(Board board, Spot initialSpot){
+        ArrayList<Spot> allowedMoves = new ArrayList<>();
+        return allowedMoves;
+    }
 }

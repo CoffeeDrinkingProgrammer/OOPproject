@@ -23,17 +23,24 @@ public class Spot {
         this.row = row;
         this.col = col;
     }
+    
+    public Spot(int row, int col){
+        this.piece = null;
+        this.row = row;
+        this.col = col;
+        
+    }
 
     /* Getters and Setters */
 
     public Piece getPiece() {
         return piece;
     }
-
+    
     public void setPiece(Piece piece) {
         this.piece = piece;
     }
-
+    
     public int getRow() {
         return row;
     }
