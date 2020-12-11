@@ -20,12 +20,22 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="098bd220-7378-4110-a867-4cdeb83afc37" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/GUI/mainmenu.form" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/GUI/mainmenu.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
@@ -45,6 +55,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
@@ -69,6 +80,8 @@
       <workItem from="1607174822080" duration="1390000" />
       <workItem from="1607255228198" duration="782000" />
       <workItem from="1607587317739" duration="1191000" />
+      <workItem from="1607673724594" duration="3813000" />
+      <workItem from="1607682628450" duration="1229000" />
     </task>
     <servers />
   </component>
@@ -88,10 +101,10 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="1377" y="335" key="#com.intellij.ide.util.MemberChooser" timestamp="1606895141407">
+    <state x="1377" y="335" key="#com.intellij.ide.util.MemberChooser" timestamp="1607682709105">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="1377" y="335" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1606895141407" />
+    <state x="1377" y="335" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1607682709105" />
     <state x="1259" y="410" key="#com.intellij.refactoring.memberPushDown.PushDownDialog" timestamp="1606895132601">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
