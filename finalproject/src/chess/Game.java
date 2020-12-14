@@ -21,13 +21,12 @@ public enum gameStatus{
 }
 
 public class Game {
-    //private String gameID;
+
     private Player[] players;
     private Board board;
     private Player currentTurn;
     private gameStatus status;
     private ArrayList<Move> movesPlayed;
-    //private Player winner;
 
     /* Getters and Setters */
 
@@ -53,34 +52,35 @@ public class Game {
         return this.getStatus() != gameStatus.ACTIVE;
    }
 
-   public boolean playerMove(Player p, int startRow, int startCol, int endRow, int endCol){
-        Spot startBox = board.getBox(startRow, startCol);
-        Spot endBox = board.getBox(endRow, endCol);
-        Move move = new Move(p, startBox, endBox);
-        return this.makeMove(move, p);
+   public boolean playerMove(Player player, int initialSpotRow, int initialSpotCol, int finalSpotRow, int finalSpotCol){
+        Spot initialBox = board.getBox(initialSpotRow, initialSpotCol);
+        Spot finalBox = board.getBox(finalSpotRow, finalSpotCol);
+        Move move = new Move(player, initialBox, finalBox);
+        return this.makeMove(move, player);
    }
 
-   private boolean makeMove(Move move, Player p){
-        Piece sourcePiece = move.getStart().getPiece();
+   private boolean makeMove(Move move, Player player){
+        Piece sourcePiece = move.getInitialSpot().getPiece();
         /* if there is no piece to be moved */
         if (sourcePiece == null){
             return false;
         }
         /* if it is not the player's turn to make a move */
-        if(p != currentTurn){
+        if(player != currentTurn){
             return false;
         }
         /* if piece to be moved does not match player's side */
-        if(sourcePiece.isWhite() != p.isWhiteSide()){
+        if(sourcePiece.isWhite() != player.isWhiteSide()){
             return false;
         }
-        /* if move is not valid */
-        if(!sourcePiece.canMove(board, move.getStart(), move.getEnd())){
+        /* if move is not valid
+        if(!sourcePiece.){
             return false;
         }
+         */
 
         /* if move is valid */
-        Piece destPiece = move.getEnd().getPiece();
+        Piece destPiece = move.getFinalSpot().getPiece();
         if(destPiece != null){
             destPiece.setKilled(true);
             move.setPieceKilled(destPiece);
@@ -90,11 +90,11 @@ public class Game {
         movesPlayed.add(move);
 
         /* move piece from source to destination */
-       move.getEnd().setPiece(move.getStart().getPiece());
-       move.getStart().setPiece(null);
+       move.getFinalSpot().setPiece(move.getInitialSpot().getPiece());
+       move.getInitialSpot().setPiece(null);
 
        if(destPiece != null && destPiece instanceof King){
-           this.status((p.isWhiteSide()) ? (gameStatus.WHITE_WINS) : (gameStatus.BLACK_WINS);
+           this.status((player.isWhiteSide()) ? (gameStatus.WHITE_WINS) : (gameStatus.BLACK_WINS);
        }
 
        /* set the current turn to the other player */
@@ -102,5 +102,6 @@ public class Game {
 
        return  true;
    }
+
 }
 

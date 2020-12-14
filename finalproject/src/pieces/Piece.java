@@ -6,8 +6,7 @@
 
 package pieces;
 import java.util.*;
-import chess.Board;
-import chess.Spot;
+import chess.*;
 
 /**
  *
@@ -16,7 +15,6 @@ import chess.Spot;
 public abstract class Piece {
     private boolean isKilled = false;
     private boolean isWhite = false;
-    private boolean hasMoved = false;
 
     /* Constructor */
 
@@ -42,18 +40,7 @@ public abstract class Piece {
         isWhite = white;
     }
 
-    public boolean hasMoved() {
-        return hasMoved;
-    }
-
-    public void setHasMoved(boolean hasMoved) {
-        this.hasMoved = hasMoved;
-    }
-
     /* methods */
 
-    public ArrayList<Spot> canMove(Board board, Spot initialSpot){
-        ArrayList<Spot> allowedMoves = new ArrayList<>();
-        return allowedMoves;
-    }
+    public abstract ArrayList<Spot> canMove(Board board, Spot initialSpot);
 }

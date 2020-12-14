@@ -13,19 +13,19 @@ import pieces.*;
  */
 public class Move{
     private Player player;
-    private Spot start;
-    private Spot end;
+    private Spot initialSpot;
+    private Spot finalSpot;
     private Piece pieceMoved;
     private Piece pieceKilled;
     private boolean isCastlingMove = false;
 
     /* Constructor */
 
-    public Move(Player player, Spot start, Spot end) {
+    public Move(Player player, Spot initialSpot, Spot finalSpot) {
         this.player = player;
-        this.start = start;
-        this.end = end;
-        this.pieceMoved = start.getPiece();
+        this.initialSpot = initialSpot;
+        this.finalSpot = finalSpot;
+        this.pieceMoved = initialSpot.getPiece();
     }
 
     /* Getters and Setters */
@@ -38,20 +38,20 @@ public class Move{
         this.player = player;
     }
 
-    public Spot getStart() {
-        return start;
+    public Spot getInitialSpot() {
+        return initialSpot;
     }
 
-    public void setStart(Spot start) {
-        this.start = start;
+    public void setInitialSpot(Spot initialSpot) {
+        this.initialSpot = initialSpot;
     }
 
-    public Spot getEnd() {
-        return end;
+    public Spot getFinalSpot() {
+        return finalSpot;
     }
 
-    public void setEnd(Spot end) {
-        this.end = end;
+    public void setFinalSpot(Spot finalSpot) {
+        this.finalSpot = finalSpot;
     }
 
     public Piece getPieceMoved() {

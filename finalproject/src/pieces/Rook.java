@@ -11,14 +11,24 @@ import chess.*;
  * @author user
  */
 public class Rook extends Piece{
-    private boolean has_moved;
+    private boolean hasMoved = false;
     
-    //constructor
+    /* Constructor */
     public Rook(boolean is_white)
     {
         super(is_white);
-        has_moved = false;
     }
+
+    /* Getters and Setters */
+
+    public boolean hasMoved() {
+        return hasMoved;
+    }
+
+    public void setHasMoved(boolean hasMoved) {
+        this.hasMoved = hasMoved;
+    }
+
     @Override
     public ArrayList<Spot> canMove(Board board, Spot initialSpot)
     {
