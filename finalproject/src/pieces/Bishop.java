@@ -22,7 +22,7 @@ public class Bishop extends Piece{
    public ArrayList<Spot> canMove(Board board, Spot initialSpot){
         
        ArrayList<Spot> allowedMoves = new ArrayList<>();
-       
+       allowedMoves.clear();
        Spot newSpot;
        
        for(int i=1;i<8;i++){

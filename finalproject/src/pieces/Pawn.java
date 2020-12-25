@@ -1,38 +1,105 @@
-<<<<<<< Updated upstream:finalproject/src/finalproject/Pawn.java
-package chessgui.pieces;
-=======
+
+
 /*
  * To change this license header, choose License Headers in Project Properties.
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
 package pieces;
->>>>>>> Stashed changes:finalproject/src/pieces/Pawn.java
+import java.util.ArrayList;
+import chess.*;
 
-import chessgui.Board;
+
 
 public class Pawn extends Piece {
 
-    private boolean has_moved;
+    private boolean hasMoved = false;
     
-    public Pawn(int x, int y, boolean is_white, String file_path, Board board)
+    /* Constructor */
+    public Pawn(boolean is_white)
     {
-        super(x,y,is_white,file_path, board);
-        has_moved = false;
+        super(is_white);
     }
     
-    public void setHasMoved(boolean has_moved)
-    {
-        this.has_moved = has_moved;
+    /* Getters and Setters */
+
+    public boolean hasMoved() {
+        return hasMoved;
     }
-    
-    public boolean getHasMoved()
-    {
-        return has_moved;
+
+    public void setHasMoved(boolean hasMoved) {
+        this.hasMoved = hasMoved;
     }
     
     @Override
-    public boolean canMove(int destination_x, int destination_y)
+    public ArrayList<Spot> canMove(Board board, Spot initialSpot)
+    {
+        ArrayList<Spot> allowedMoves = new ArrayList<>();
+        allowedMoves.clear();
+        Spot newSpot;
+        
+        if(this.isWhite()){
+            if(!this.hasMoved()){ 
+                for(int i=1;i<=2;i++){ //white's first possible moves
+                    if(board.getBox(initialSpot.getRow()+i, initialSpot.getCol()).getPiece()==null){
+                        newSpot = new Spot(initialSpot.getRow()+i, initialSpot.getCol());
+                        allowedMoves.add(newSpot);
+                    }else{
+                        break;
+                    }
+                        newSpot = new Spot(initialSpot.getRow()+i, initialSpot.getCol());
+                        allowedMoves.add(newSpot);
+                }
+                
+            }else{ 
+                if(board.getBox(initialSpot.getRow()+1, initialSpot.getCol()).getPiece()==null){
+                    newSpot = new Spot(initialSpot.getRow()+1, initialSpot.getCol());
+                    allowedMoves.add(newSpot);
+                }
+            }
+            if(board.getBox(initialSpot.getRow()+1, initialSpot.getCol()+1).getPiece()!=null){ //an attacking white pawn
+                if(!board.getBox(initialSpot.getRow()+1, initialSpot.getCol()+1).getPiece().isWhite()){
+                    newSpot = new Spot(initialSpot.getRow()+1, initialSpot.getCol()+1);
+                    allowedMoves.add(newSpot);
+                }
+            }else if(board.getBox(initialSpot.getRow()+1, initialSpot.getCol()-1).getPiece()!=null){
+                if(!board.getBox(initialSpot.getRow()+1, initialSpot.getCol()-1).getPiece().isWhite()){
+                    newSpot = new Spot(initialSpot.getRow()+1, initialSpot.getCol()-1);
+                    allowedMoves.add(newSpot);
+                }
+            }
+        }
+        
+        if(!this.isWhite()){
+            if(!this.hasMoved()){ //black's first possible moves
+                for(int i=1;i<2;i++){
+                    if(board.getBox(initialSpot.getRow()-i, initialSpot.getCol()).getPiece() ==null){
+                        newSpot = new Spot(initialSpot.getRow()-i, initialSpot.getCol());
+                        allowedMoves.add(newSpot);
+                    }else{
+                        break;
+                    }
+                        newSpot = new Spot(initialSpot.getRow()-i, initialSpot.getCol());
+                        allowedMoves.add(newSpot);
+                }
+            }
+            if(board.getBox(initialSpot.getRow()-1, initialSpot.getCol()+1).getPiece() !=null){ //an attacking black pawn
+                if(board.getBox(initialSpot.getRow()-1, initialSpot.getCol()+1).getPiece().isWhite()){
+                    newSpot = new Spot(initialSpot.getRow()-1, initialSpot.getCol()+1);
+                    allowedMoves.add(newSpot);
+                }
+            }else if(board.getBox(initialSpot.getRow()-1, initialSpot.getCol()-1).getPiece() !=null){
+                if(board.getBox(initialSpot.getRow()-1, initialSpot.getCol()-1).getPiece().isWhite()){
+                    newSpot = new Spot(initialSpot.getRow()-1, initialSpot.getCol()-1);
+                    allowedMoves.add(newSpot);
+                }
+            }
+        }
+        
+        return allowedMoves;
+    }
+    
+    /*public boolean canMove(int destination_x, int destination_y)
     {
         // Remember: A pawn may only move towards the oponent's side of the board.
         // If the pawn has not moved yet in the game, for its first move it can 
@@ -106,5 +173,5 @@ public class Pawn extends Piece {
         
     
         return true;
-    }
+    }*/
 }
