@@ -4,18 +4,18 @@
  * and open the template in the editor.
  */
 package chess;
-
+import GUI.GUI;
 /**
  *
  * @author user
  */
-public class Chess{
+public class Finalproject{
 
     /**
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        // TODO code application logic here
+        new GUI();
     }
     
 }
