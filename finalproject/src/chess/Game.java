@@ -103,5 +103,12 @@ public class Game {
        return  true;
    }
 
+   public boolean isCheck(Move move,Player player){
+        /*gets the piece from the final spot of the last move */
+        Move lastMove = movesPlayed.get(movesPlayed.size()-1);
+        ArrayList<Spot> possibleSpots = lastMove.getFinalSpot().getPiece().canMove()
+        
+        return true;
+   }
 }
 

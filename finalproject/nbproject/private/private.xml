@@ -3,10 +3,12 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/D:/Dave/Desktop/OOP%20Project/OOPproject/finalproject/src/chess/GameHistory.java</file>
-            <file>file:/D:/Dave/Desktop/OOP%20Project/OOPproject/finalproject/src/GUI/GUI.java</file>
-            <file>file:/D:/Dave/Desktop/OOP%20Project/OOPproject/finalproject/src/pieces/Bishop.java</file>
-            <file>file:/D:/Dave/Desktop/OOP%20Project/OOPproject/finalproject/src/chess/Finalproject.java</file>
+            <file>file:/D:/Projects/OOP/OOPproject/finalproject/src/pieces/Knight.java</file>
+            <file>file:/D:/Projects/OOP/OOPproject/finalproject/src/GUI/GUI.java</file>
+            <file>file:/D:/Projects/OOP/OOPproject/finalproject/src/chess/Spot.java</file>
+            <file>file:/D:/Projects/OOP/OOPproject/finalproject/src/GUI/mainmenu.java</file>
+            <file>file:/D:/Projects/OOP/OOPproject/finalproject/src/chess/Move.java</file>
+            <file>file:/D:/Projects/OOP/OOPproject/finalproject/src/chess/Player.java</file>
         </group>
     </open-files>
 </project-private>
